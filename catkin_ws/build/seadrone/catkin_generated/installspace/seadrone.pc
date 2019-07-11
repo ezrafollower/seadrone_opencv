@@ -1,0 +1,8 @@
+prefix=/home/kiat/seadrone/catkin_ws/install
+
+Name: seadrone
+Description: Description of seadrone
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/kiat/seadrone/catkin_ws/install/lib 
+Requires: 

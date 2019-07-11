@@ -1,0 +1,8 @@
+prefix=/home/kiat/seadrone/catkin_ws/devel
+
+Name: apriltags2
+Description: Description of apriltags2
+Version: 0.9.8
+Cflags: -I/home/kiat/seadrone/catkin_ws/src/apriltags2_ros/apriltags2/include
+Libs: -L/home/kiat/seadrone/catkin_ws/devel/lib -lapriltags2
+Requires: 

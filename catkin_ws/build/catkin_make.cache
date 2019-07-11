@@ -1,0 +1,2 @@
+apriltags2_ros/apriltags2:apriltags2_ros/apriltags2_ros:seadrone
+-DCATKIN_DEVEL_PREFIX=/home/kiat/seadrone/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/kiat/seadrone/catkin_ws/install -G Unix Makefiles
