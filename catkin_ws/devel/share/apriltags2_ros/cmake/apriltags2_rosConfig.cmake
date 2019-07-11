@@ -67,14 +67,14 @@ set(apriltags2_ros_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(apriltags2_ros_SOURCE_PREFIX /home/kiat/seadrone/catkin_ws/src/apriltags2_ros/apriltags2_ros)
-  set(apriltags2_ros_DEVEL_PREFIX /home/kiat/seadrone/catkin_ws/devel)
+  set(apriltags2_ros_SOURCE_PREFIX /home/kiat/Seadrone/catkin_ws/src/apriltags2_ros/apriltags2_ros)
+  set(apriltags2_ros_DEVEL_PREFIX /home/kiat/Seadrone/catkin_ws/devel)
   set(apriltags2_ros_INSTALL_PREFIX "")
   set(apriltags2_ros_PREFIX ${apriltags2_ros_DEVEL_PREFIX})
 else()
   set(apriltags2_ros_SOURCE_PREFIX "")
   set(apriltags2_ros_DEVEL_PREFIX "")
-  set(apriltags2_ros_INSTALL_PREFIX /home/kiat/seadrone/catkin_ws/install)
+  set(apriltags2_ros_INSTALL_PREFIX /home/kiat/Seadrone/catkin_ws/install)
   set(apriltags2_ros_PREFIX ${apriltags2_ros_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(apriltags2_ros_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/kiat/seadrone/catkin_ws/devel/include;/home/kiat/seadrone/catkin_ws/src/apriltags2_ros/apriltags2_ros/include;/usr/include/eigen3;/usr/include;/usr/include/opencv " STREQUAL " ")
+if(NOT "/home/kiat/Seadrone/catkin_ws/devel/include;/home/kiat/Seadrone/catkin_ws/src/apriltags2_ros/apriltags2_ros/include;/usr/include/eigen3;/usr/include;/usr/include/opencv " STREQUAL " ")
   set(apriltags2_ros_INCLUDE_DIRS "")
-  set(_include_dirs "/home/kiat/seadrone/catkin_ws/devel/include;/home/kiat/seadrone/catkin_ws/src/apriltags2_ros/apriltags2_ros/include;/usr/include/eigen3;/usr/include;/usr/include/opencv")
+  set(_include_dirs "/home/kiat/Seadrone/catkin_ws/devel/include;/home/kiat/Seadrone/catkin_ws/src/apriltags2_ros/apriltags2_ros/include;/usr/include/eigen3;/usr/include;/usr/include/opencv")
   if(NOT "https://github.com/dmalyuta/apriltags2_ros/issues " STREQUAL " ")
     set(_report "Check the issue tracker 'https://github.com/dmalyuta/apriltags2_ros/issues' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://www.ros.org/wiki/apriltags2_ros " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/kiat/seadrone/catkin_ws/devel/include;/home/kiat/seadrone/catkin_w
         message(FATAL_ERROR "Project 'apriltags2_ros' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'apriltags2_ros' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/kiat/seadrone/catkin_ws/src/apriltags2_ros/apriltags2_ros/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'apriltags2_ros' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/kiat/Seadrone/catkin_ws/src/apriltags2_ros/apriltags2_ros/${idir}'.  ${_report}")
     endif()
     _list_append_unique(apriltags2_ros_INCLUDE_DIRS ${include})
   endforeach()
@@ -131,7 +131,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/kiat/seadrone/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/kiat/Seadrone/catkin_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/apriltags2_ros_generate_messages_cpp"
-  "/home/kiat/seadrone/catkin_ws/devel/include/apriltags2_ros/AprilTagDetection.h"
-  "/home/kiat/seadrone/catkin_ws/devel/include/apriltags2_ros/AprilTagDetectionArray.h"
-  "/home/kiat/seadrone/catkin_ws/devel/include/apriltags2_ros/AnalyzeSingleImage.h"
+  "/home/kiat/Seadrone/catkin_ws/devel/include/apriltags2_ros/AprilTagDetection.h"
+  "/home/kiat/Seadrone/catkin_ws/devel/include/apriltags2_ros/AprilTagDetectionArray.h"
+  "/home/kiat/Seadrone/catkin_ws/devel/include/apriltags2_ros/AnalyzeSingleImage.h"
 )
 
 # Per-language clean rules from dependency scanning.

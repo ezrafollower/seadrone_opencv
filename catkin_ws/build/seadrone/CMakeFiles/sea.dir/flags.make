@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"seadrone\"
 
-CXX_INCLUDES = -I/home/kiat/seadrone/catkin_ws/devel/include -I/home/kiat/seadrone/catkin_ws/src/apriltags2_ros/apriltags2_ros/include -I/home/kiat/seadrone/catkin_ws/src/apriltags2_ros/apriltags2/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv -I/usr/include/eigen3 -I/home/kiat/seadrone/catkin_ws/src/seadrone/src/udpUser 
+CXX_INCLUDES = -I/home/kiat/Seadrone/catkin_ws/devel/include -I/home/kiat/Seadrone/catkin_ws/src/apriltags2_ros/apriltags2_ros/include -I/home/kiat/Seadrone/catkin_ws/src/apriltags2_ros/apriltags2/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv -I/usr/include/eigen3 -I/home/kiat/Seadrone/catkin_ws/src/seadrone/src/udpUser 
 

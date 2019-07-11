@@ -27,8 +27,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/apriltags2.dir/src/zarray.c.o"
   "CMakeFiles/apriltags2.dir/src/zhash.c.o"
   "CMakeFiles/apriltags2.dir/src/zmaxheap.c.o"
-  "/home/kiat/seadrone/catkin_ws/devel/lib/libapriltags2.pdb"
-  "/home/kiat/seadrone/catkin_ws/devel/lib/libapriltags2.so"
+  "/home/kiat/Seadrone/catkin_ws/devel/lib/libapriltags2.pdb"
+  "/home/kiat/Seadrone/catkin_ws/devel/lib/libapriltags2.so"
 )
 
 # Per-language clean rules from dependency scanning.

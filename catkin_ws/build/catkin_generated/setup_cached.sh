@@ -7,7 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/kiat/seadrone/catkin_ws/devel:$CMAKE_PREFIX_PATH"
-export PWD="/home/kiat/seadrone/catkin_ws/build"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/kiat/seadrone/catkin_ws/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/kiat/seadrone/catkin_ws/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/kiat/Seadrone/catkin_ws/devel:$CMAKE_PREFIX_PATH"
+export PWD="/home/kiat/Seadrone/catkin_ws/build"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/kiat/Seadrone/catkin_ws/devel/share/common-lisp"
+export ROS_PACKAGE_PATH="/home/kiat/Seadrone/catkin_ws/src:$ROS_PACKAGE_PATH"

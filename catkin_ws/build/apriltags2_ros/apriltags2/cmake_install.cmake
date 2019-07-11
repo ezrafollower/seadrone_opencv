@@ -1,8 +1,8 @@
-# Install script for directory: /home/kiat/seadrone/catkin_ws/src/apriltags2_ros/apriltags2
+# Install script for directory: /home/kiat/Seadrone/catkin_ws/src/apriltags2_ros/apriltags2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/kiat/seadrone/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/kiat/Seadrone/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,18 +38,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/kiat/seadrone/catkin_ws/build/apriltags2_ros/apriltags2/catkin_generated/installspace/apriltags2.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/kiat/Seadrone/catkin_ws/build/apriltags2_ros/apriltags2/catkin_generated/installspace/apriltags2.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/apriltags2/cmake" TYPE FILE FILES
-    "/home/kiat/seadrone/catkin_ws/build/apriltags2_ros/apriltags2/catkin_generated/installspace/apriltags2Config.cmake"
-    "/home/kiat/seadrone/catkin_ws/build/apriltags2_ros/apriltags2/catkin_generated/installspace/apriltags2Config-version.cmake"
+    "/home/kiat/Seadrone/catkin_ws/build/apriltags2_ros/apriltags2/catkin_generated/installspace/apriltags2Config.cmake"
+    "/home/kiat/Seadrone/catkin_ws/build/apriltags2_ros/apriltags2/catkin_generated/installspace/apriltags2Config-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/apriltags2" TYPE FILE FILES "/home/kiat/seadrone/catkin_ws/src/apriltags2_ros/apriltags2/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/apriltags2" TYPE FILE FILES "/home/kiat/Seadrone/catkin_ws/src/apriltags2_ros/apriltags2/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -59,7 +59,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libapriltags2.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/kiat/seadrone/catkin_ws/devel/lib/libapriltags2.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/kiat/Seadrone/catkin_ws/devel/lib/libapriltags2.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libapriltags2.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libapriltags2.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -69,6 +69,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/apriltags2" TYPE DIRECTORY FILES "/home/kiat/seadrone/catkin_ws/src/apriltags2_ros/apriltags2/include/" FILES_MATCHING REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/apriltags2" TYPE DIRECTORY FILES "/home/kiat/Seadrone/catkin_ws/src/apriltags2_ros/apriltags2/include/" FILES_MATCHING REGEX "/[^/]*\\.h$")
 endif()
 

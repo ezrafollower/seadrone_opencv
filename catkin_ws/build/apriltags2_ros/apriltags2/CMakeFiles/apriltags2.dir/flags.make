@@ -6,5 +6,5 @@ C_FLAGS = -std=gnu99 -fPIC -Wall -Wno-unused-parameter -Wno-unused-function -I. 
 
 C_DEFINES = -DROS_BUILD_SHARED_LIBS=1 -Dapriltags2_EXPORTS
 
-C_INCLUDES = -I/home/kiat/seadrone/catkin_ws/src/apriltags2_ros/apriltags2/include -I/home/kiat/seadrone/catkin_ws/src/apriltags2_ros/apriltags2/include/common 
+C_INCLUDES = -I/home/kiat/Seadrone/catkin_ws/src/apriltags2_ros/apriltags2/include -I/home/kiat/Seadrone/catkin_ws/src/apriltags2_ros/apriltags2/include/common 
 

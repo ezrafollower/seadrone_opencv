@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kiat/seadrone/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/kiat/Seadrone/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kiat/seadrone/catkin_ws/build
+CMAKE_BINARY_DIR = /home/kiat/Seadrone/catkin_ws/build
 
 # Utility rule file for geometry_msgs_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ apriltags2_ros/apriltags2_ros/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
 .PHONY : apriltags2_ros/apriltags2_ros/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
 
 apriltags2_ros/apriltags2_ros/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
-	cd /home/kiat/seadrone/catkin_ws/build/apriltags2_ros/apriltags2_ros && $(CMAKE_COMMAND) -P CMakeFiles/geometry_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/kiat/Seadrone/catkin_ws/build/apriltags2_ros/apriltags2_ros && $(CMAKE_COMMAND) -P CMakeFiles/geometry_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : apriltags2_ros/apriltags2_ros/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
 
 apriltags2_ros/apriltags2_ros/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend:
-	cd /home/kiat/seadrone/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kiat/seadrone/catkin_ws/src /home/kiat/seadrone/catkin_ws/src/apriltags2_ros/apriltags2_ros /home/kiat/seadrone/catkin_ws/build /home/kiat/seadrone/catkin_ws/build/apriltags2_ros/apriltags2_ros /home/kiat/seadrone/catkin_ws/build/apriltags2_ros/apriltags2_ros/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kiat/Seadrone/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kiat/Seadrone/catkin_ws/src /home/kiat/Seadrone/catkin_ws/src/apriltags2_ros/apriltags2_ros /home/kiat/Seadrone/catkin_ws/build /home/kiat/Seadrone/catkin_ws/build/apriltags2_ros/apriltags2_ros /home/kiat/Seadrone/catkin_ws/build/apriltags2_ros/apriltags2_ros/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : apriltags2_ros/apriltags2_ros/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
 
