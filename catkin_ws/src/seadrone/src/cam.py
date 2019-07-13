@@ -17,6 +17,7 @@ if __name__ == "__main__":
 
 	while True:
 		ret, frame = cap.read()
+		'''
 		pub_img.publish(bridge.cv2_to_imgmsg(frame, "bgr8"))
 
 		cam_info = CameraInfo()
@@ -31,6 +32,8 @@ if __name__ == "__main__":
 		cam_info.distortion_model =  "plumb_bob"
 		pub_info.publish(cam_info)
 		'''
+
+		'''
 		frame = cv2.medianBlur(frame,5)
 		circles = cv2.HoughCircles(frame,cv2.HOUGH_GRADIENT,1,20,
 							param1=50,param2=30,minRadius=0,maxRadius=0)
@@ -42,6 +45,6 @@ if __name__ == "__main__":
 			cv2.circle(frame,(i[0],i[1]),2,(0,0,255),3)
 		pub_detect.publish(bridge.cv2_to_imgmsg(frame, "bgr8"))
 		'''
-
+		pub_img.publish(bridge.cv2_to_imgmsg(frame, "bgr8"))
 
 
