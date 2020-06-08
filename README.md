@@ -23,8 +23,8 @@ To be used on Linux. Tested on a laptop with Ubuntu 16 and Cmake 3.5, laptop is 
 # How to compile this test code after cloning it:
 ```
 cd /catkin_ws
-rmdir -r devel
-rmdir -r build
+rm -r devel
+rm -r build
 catkin_make
 ```
 
