@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/kiat/Seadrone/catkin_ws/src
-# Build directory: /home/kiat/Seadrone/catkin_ws/build
+# Source directory: /home/ezra/Seadrone/catkin_ws/src
+# Build directory: /home/ezra/Seadrone/catkin_ws/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/kiat/Seadrone/catkin_ws/src/apriltags2_ros/apriltags2_ros
-# Build directory: /home/kiat/Seadrone/catkin_ws/build/apriltags2_ros/apriltags2_ros
+# Source directory: /home/ezra/Seadrone/catkin_ws/src/apriltags2_ros/apriltags2_ros
+# Build directory: /home/ezra/Seadrone/catkin_ws/build/apriltags2_ros/apriltags2_ros
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

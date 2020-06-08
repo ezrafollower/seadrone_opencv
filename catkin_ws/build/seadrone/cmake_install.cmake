@@ -1,8 +1,8 @@
-# Install script for directory: /home/kiat/Seadrone/catkin_ws/src/seadrone
+# Install script for directory: /home/ezra/Seadrone/catkin_ws/src/seadrone
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/kiat/Seadrone/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ezra/Seadrone/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/kiat/Seadrone/catkin_ws/build/seadrone/catkin_generated/installspace/seadrone.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ezra/Seadrone/catkin_ws/build/seadrone/catkin_generated/installspace/seadrone.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/seadrone/cmake" TYPE FILE FILES
-    "/home/kiat/Seadrone/catkin_ws/build/seadrone/catkin_generated/installspace/seadroneConfig.cmake"
-    "/home/kiat/Seadrone/catkin_ws/build/seadrone/catkin_generated/installspace/seadroneConfig-version.cmake"
+    "/home/ezra/Seadrone/catkin_ws/build/seadrone/catkin_generated/installspace/seadroneConfig.cmake"
+    "/home/ezra/Seadrone/catkin_ws/build/seadrone/catkin_generated/installspace/seadroneConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/seadrone" TYPE FILE FILES "/home/kiat/Seadrone/catkin_ws/src/seadrone/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/seadrone" TYPE FILE FILES "/home/ezra/Seadrone/catkin_ws/src/seadrone/package.xml")
 endif()
 
