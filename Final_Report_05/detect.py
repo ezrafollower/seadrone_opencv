@@ -5,7 +5,7 @@ from picamera import PiCamera
 import serial
 import rospy
 import time
-'''
+
 def nothing(x):
 	pass
 
@@ -17,7 +17,7 @@ cv2.createTrackbar("LV", "Trackbars", 0, 255, nothing)
 cv2.createTrackbar("UH", "Trackbars", 0, 255, nothing)
 cv2.createTrackbar("US", "Trackbars", 0, 255, nothing)
 cv2.createTrackbar("UV", "Trackbars", 0, 255, nothing)
-'''
+
 camera = PiCamera()
 camera.resolution = (640, 480)
 camera.framerate = 30

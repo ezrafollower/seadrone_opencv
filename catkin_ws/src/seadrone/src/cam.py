@@ -6,6 +6,19 @@ from cv_bridge import CvBridge, CvBridgeError
 import cv2
 import time
 
+def nothing(x):
+        pass
+
+cv2.namedWindow("Trackbars")
+
+cv2.createTrackbar("LH", "Trackbars", 0, 255, nothing)
+cv2.createTrackbar("LS", "Trackbars", 0, 255, nothing)
+cv2.createTrackbar("LV", "Trackbars", 0, 255, nothing)
+cv2.createTrackbar("UH", "Trackbars", 0, 255, nothing)
+cv2.createTrackbar("US", "Trackbars", 0, 255, nothing)
+cv2.createTrackbar("UV", "Trackbars", 0, 255, nothing)
+
+font = cv2.FONT_HERSHEY_COMPLEX
 
 if __name__ == "__main__":
 	bridge = CvBridge()
@@ -41,11 +54,10 @@ if __name__ == "__main__":
 			cv2.circle(frame,(i[0],i[1]),i[2],(0,255,0),2)
 			# draw the center of the circle
 			cv2.circle(frame,(i[0],i[1]),2,(0,0,255),3)
-		'''
-                
                 pub_detect.publish(bridge.cv2_to_imgmsg(frame, "bgr8"))
-		
-                image = frame.array
+		'''
+
+                image = frame
                 blurred_image = cv2.GaussianBlur(image, (5, 5), 0)
                 hsv = cv2.cvtColor(blurred_image, cv2.COLOR_BGR2HSV)
 
@@ -78,4 +90,59 @@ if __name__ == "__main__":
 
                 mask = mask_red + mask_green + mask_blue
                 result = cv2.bitwise_and (image, image, mask=mask)
+
+                _, contours, _ = cv2.findContours(mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
+                for contour in contours:
+                    M = cv2.moments(contour)
+                    area = cv2.contourArea(contour)
+                    if area > 20000:   # to be larger than a min size
+                        cx = int(M['m10']/M['m00'])
+                        cy = int(M['m01']/M['m00'])
+                        peri = cv2.arcLength(contour, True)
+                        approx = cv2.approxPolyDP(contour, 0.03*peri, True)
+                        cn = 0
+                        cs = 0
+
+                        if len (approx) == 3:
+                                shape = "Triangle"
+                                cs = 2
+                        elif len (approx) == 4:
+                                shape = "Rectangle"
+                                cs = 3
+                        elif 5 <= len (approx) <= 8:
+                                shape = "Circle"
+                                cs = 1
+                        else:
+                                shape = "not detect shape"
+                                cs = 0
+
+                        c = image[cy][cx]
+                        if c[0] > c[1] and c[0] > c[2] and c[0] > 80:
+                                color = "Blue"
+                                cn = 3
+                        elif c[1] > c[0] and c[1] > c[2] and c[1] > 80:
+                                color = "Green"
+                                cn = 2
+                        elif c[2] > c[0] and c[2] > c[1] and c[2] > 80:
+                                color = "Red"
+                                cn = 1
+                        else:
+                                color = "not detect color"
+                                cn = 0
+
+                        act = 0
+                        print("shape: %d / color: %d"%(cs,cn))
+                        cv2.drawContours(result, contour, -1, (0, 255, 0), 3)
+                        text = "{} / {} / {}".format(color, shape, act)
+                        cv2.putText(image, text, (cx, cy), font, 0.5, (255, 255, 255), 2)
+                        cv2.putText(result, text, (cx, cy), font, 0.5, (255, 255, 255), 2)
+                
+                cv2.imshow("frame", image)
+                #cv2.imshow("mask", mask)
+                #cv2.imshow("mask_red", mask_red)
+                #cv2.imshow("mask_green", mask_green)
+                #cv2.imshow("mask_blue", mask_blue)
                 cv2.imshow("result", result)
+
+                pub_detect.publish(bridge.cv2_to_imgmsg(result, "bgr8"))
+
